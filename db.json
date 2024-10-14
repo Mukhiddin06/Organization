@@ -1,0 +1,22 @@
+{
+    "organization":[
+        {
+            "key": "1",
+            "id": "1",
+            "companyName":"Apple Inc.",
+            "inn": "1234567890",
+            "status": "Faol",
+            "address": "Toshkent",
+            "createdAt": "2020-01-01"
+        },
+        {
+            "key": "11",
+            "id": "2",
+            "companyName":"Najot Ta'lim",
+            "inn": "6788426421",
+            "status": "Faol",
+            "address": "Toshkent",
+            "createdAt": "2018-10-05"
+        }
+    ]
+}
