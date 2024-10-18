@@ -1,37 +1,59 @@
 {
   "organization": [
     {
-      "key": "1",
-      "id": "1",
-      "companyName": "Apple Inc.",
-      "inn": "",
-      "status": "1",
-      "regionId": "2",
-      "regionName": "Farg'ona",
-      "address": "Chilonzor 9kv",
-      "createdAt": "2020-01-01"
-    },
-    {
-      "key": "11",
-      "id": "2",
+      "key": 34,
       "companyName": "Najot Ta'lim",
-      "inn": "6788426421",
-      "status": "3",
+      "inn": "678842642",
+      "status": "1",
       "regionId": "1",
       "regionName": "Toshkent",
       "address": "Chilonzor 9kv",
-      "createdAt": "2018-10-05"
+      "createdAt": "2018-10-05",
+      "id": "2"
     },
     {
-      "id": "00e6",
-      "key": 9,
+      "key": 12,
       "companyName": "PDP",
       "inn": "846415269",
-      "status": "1",
+      "status": "2",
       "regionId": "1",
       "regionName": "Toshkent viloyati",
       "address": "Sergeli, 5kv",
-      "createdAt": "2024-10-03"
+      "createdAt": "2024-10-03",
+      "id": "00e6"
+    },
+    {
+      "id": "70d0",
+      "key": 10,
+      "companyName": "TATU",
+      "inn": "464836133",
+      "status": "2",
+      "regionId": "1",
+      "regionName": "Toshkent viloyati",
+      "address": "Yunusobot",
+      "createdAt": null
+    }
+  ],
+  "users":[
+    {
+      "key": 30,
+      "id":"3",
+      "name":"John",
+      "email":"john@gmail.com",
+      "number": "+998945604274",
+      "status":true,
+      "job":"PUBG",
+      "address":"USA"
+    },
+    {
+      "key": 55,
+      "id":"7",
+      "name":"John",
+      "email":"john@gmail.com",
+      "number": "+998945604274",
+      "status":true,
+      "job":"PUBG",
+      "address":"USA"
     }
   ]
 }

@@ -26,10 +26,10 @@ function OrganizationMore() {
                     </button>
                     <h2 className='font-bold text-[25px] pl-[15px]'>{singleData.companyName}</h2>
                 </div>
-                <Button icon={<EditOutlined />} size='large' type='primary' >Tahrirlash</Button>
+                <Button htmlType='button' onClick={() => navigate("edit")} icon={<EditOutlined />} size='large' type='primary' >Tahrirlash</Button>
             </div>
-            <ul className='w-[50%] flex justify-around p-5 rounded-xl border-[2px] border-slate-600'>
-                <li className='space-y-5'>
+            <div className='w-[50%] flex justify-around p-5 rounded-xl border-[2px] border-slate-600'>
+                <ul className='space-y-5'>
                     <li className='flex flex-col'>
                         <span className='text-[15px] text-slate-500'>ID</span>
                         <strong className='text-[22px]'>{singleData.id}</strong>
@@ -44,10 +44,14 @@ function OrganizationMore() {
                     </li>
                     <li className='flex flex-col'>
                         <span className='text-[15px] text-slate-500'>Holati</span>
-                        <strong className='text-[22px]'>{singleData.status ? "Faol" : "Faol emas"}</strong>
+                        <strong className='text-[22px]'>
+                            {singleData.status == 1 ? "Faol" : ""}
+                            {singleData.status == 2 ? "Faol emas" : ""}
+                            {singleData.status == 3 ? "Jarayonda" : ""}
+                        </strong>
                     </li>
-                </li>
-                <li className='space-y-5'>
+                </ul>
+                <ul className='space-y-5'>
                     <li className='flex flex-col'>
                         <span className='text-[15px] text-slate-500'>Viloyat nomi</span>
                         <strong className='text-[22px]'>{singleData.regionName}</strong>
@@ -60,8 +64,8 @@ function OrganizationMore() {
                         <span className='text-[15px] text-slate-500'>Tashkil etilgan vaqt</span>
                         <strong className='text-[22px]'>{singleData.createdAt}</strong>
                     </li>
-                </li>
-            </ul>
+                </ul>
+            </div>
         </div>
     )
 }
